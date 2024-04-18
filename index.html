@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="age-calculator-wrapper">
+        <div class="date-inputs">
+          <div class="day-input">
+            <p class="label-input">DAY</p>
+            <input type="text" placeholder="DD" data-id="day-input" />
+            <p class="error-message" data-id="error-message"></p>
+          </div>
+          <div class="month-input">
+            <p class="label-input">MONTH</p>
+            <input type="text" placeholder="MM" data-id="month-input" />
+            <p class="error-message" data-id="error-message"></p>
+          </div>
+          <div class="year-input">
+            <p class="label-input">YEAR</p>
+            <input type="text" placeholder="YYYY" data-id="year-input" />
+            <p class="error-message" data-id="error-message"></p>
+          </div>
+        </div>
+        <div class="divider">
+          <hr />
+          <div class="button">
+            <img
+              src="./assets/images/icon-down-purple.png"
+              alt="icon-arrow"
+              data-id="button"
+            />
+          </div>
+        </div>
+        <div class="date-outputs">
+          <div class="year-output in-line">
+            <p class="value" data-id="year-output">- -</p>
+            <p class="label">years</p>
+          </div>
+          <div class="month-output in-line">
+            <p class="value" data-id="month-output">- -</p>
+            <p class="label">months</p>
+          </div>
+          <div class="day-output in-line">
+            <p class="value" data-id="day-output">- -</p>
+            <p class="label">days</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

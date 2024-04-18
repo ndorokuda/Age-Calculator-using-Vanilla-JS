@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  /* Primary Colors */
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+
+  /* Neutral COlors */
+
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins';
+  font-size: 16px;
+  background-color: var(--off-white);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.age-calculator-wrapper {
+  width: 700px;
+  background-color: var(--white);
+  padding: 40px;
+  position: relative;
+  border-radius: 20px 20px 30% 20px;
+}
+
+.date-inputs {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.label-input {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--smokey-grey);
+}
+.button {
+  width: 120px;
+  position: absolute;
+  right: 20px;
+  top: 23%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button:active {
+  opacity: 0.8;
+}
+
+input {
+  border: 1px solid var(--light-grey);
+  padding: 10px;
+  width: 120px;
+  height: 60px;
+  margin-top: 10px;
+  border-radius: 5px;
+  color: var(--off-black);
+  font-weight: 800;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+input[type='text']:focus {
+  border: 1px solid var(--purple);
+  outline: none;
+}
+
+::placeholder {
+  color: var(--smokey-grey);
+  font-family: 'Poppins';
+}
+
+.error-message {
+  font-style: italic;
+  font-size: 0.8rem;
+  color: var(--light-red);
+  margin-top: 5px;
+}
+
+.divider hr {
+  width: 95%;
+  border: 1px solid var(--light-grey);
+}
+
+.date-outputs {
+  margin-top: 50px;
+  font-size: 80px;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 5rem;
+}
+
+/* Utility Classes */
+
+img {
+  width: 100%;
+}
+
+.in-line {
+  display: flex;
+  gap: 5px;
+}
+
+.value {
+  color: var(--purple);
+}
+
+.error-state-date-input-label {
+  color: var(--light-red);
+}
